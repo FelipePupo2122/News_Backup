@@ -1,0 +1,19 @@
+// Arquivo de compilação de nível superior onde você pode adicionar opções de configuração comuns a todos os subprojetos/módulos.
+
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.4"
+
+        // NOTE: Não coloque as dependências do seu aplicativo aqui; eles pertencem
+        // nos arquivos build.gradle do módulo individual
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
